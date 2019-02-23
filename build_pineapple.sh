@@ -33,7 +33,7 @@ first_run() {
     cd "$top"
     apt_get
     #git submodule update --recursive --remote
-    wget https://www.wifipineapple.com/downloads/nano/latest -O upgrade-"$upstream_version".bin
+    wget https://www.wifipineapple.com/downloads/nano/2.0.2 -O upgrade-"$upstream_version".bin
     install_binwalk
     echo "BINWALK=binwalk" >> firmware-mod-kit/shared-ng.inc
     touch configs/.upstream_version
